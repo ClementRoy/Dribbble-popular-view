@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+
+html {
+	height: 100%;
+} 
+body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	-webkit-box-shadow: 300px 0 300px rgba(0,0,0,1);
+	box-shadow: 300px 0 300px rgba(0,0,0,1);
+	overflow: hidden;
+	background: #000000;
+
+	background: -webkit-linear-gradient(top, #000000 0%, #111111 100%);
+	background: -moz-linear-gradient(top, #000000 0%, #111111 100%);
+	background: -o-linear-gradient(top, #000000 0%, #111111 100%);
+	background: -ms-linear-gradient(top, #000000 0%, #111111 100%);
+	background: linear-gradient(top, #000000 0%, #111111 100%);
+
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#111111',GradientType=0 );
+}
+
+#logo {
+	width: 300px;
+	height: 100px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	z-index: 3;
+}
+
+#logo img {
+	float: left;
+}
+
+h1 {
+	font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-size: 55px;
+	text-transform: lowercase;
+	font-weight: 300;
+	color: white;
+	margin: 0;
+	padding: 6px;
+	margin-left: 80px;
+}
+
+#shadow {
+	display: none;
+/*	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+	-webkit-box-shadow: inset 0 300px 300px rgba(0,0,0,0.9);
+	box-shadow: inset 0 300px 300px rgba(0,0,0,0.9);*/
+}
+
+#content {
+	height: 3000px;
+	width: 3800px;
+	overflow: hidden;
+	position: relative;
+	left: -1050px;
+	top: -980px;
+
+	z-index: 1;
+
+
+	-moz-transform: perspective(800px) rotateX(30deg);
+	-webkit-transform: perspective(800px) rotateX(30deg);
+	-o-transform: perspective(800px) rotateX(30deg);
+	-ms-transform: perspective(800px) rotateX(30deg);
+	transform: perspective(800px) rotateX(30deg);
+
+}
+
+#content img {
+	margin: 3px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+@keyframes "slidein1" {
+ from {
+    top: 0;
+ }
+ to {
+    top: -2472px;
+ }
+
+}
+
+@-moz-keyframes slidein1 {
+ from {
+   top: 0;
+ }
+ to {
+   top: -2472px;
+ }
+
+}
+
+@-webkit-keyframes "slidein1" {
+ from {
+   top: 0;
+ }
+ to {
+   top: -2472px;
+ }
+
+}
+
+@-ms-keyframes "slidein1" {
+ from {
+   top: 0;
+ }
+ to {
+   top: -2472px;
+ }
+
+}
+
+@-o-keyframes "slidein1" {
+ from {
+   top: 0;
+ }
+ to {
+   top: -2472px;
+ }
+
+}
+
+#shots {
+	position: absolute;
+
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
+	-o-animation-timing-function: linear;
+	animation-timing-function: linear;
+
+
+	-webkit-animation-duration: 40s;
+	-moz-animation-duration: 40s;
+	-ms-animation-duration: 40s;
+	-o-animation-duration: 40s;
+	animation-duration: 40s;
+
+	-webkit-animation-name: slidein1;
+	-moz-animation-name: slidein1;
+	-ms-animation-name: slidein1;
+	-o-animation-name: slidein1;
+	animation-name: slidein1;
+}
+
+li {
+	display: inline-block;
+	width: 400px;
+	height: 300px;
+	margin: 3px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+
+
+.animation-play-state-paused {
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-ms-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	animation-play-state: paused;
+}
+
+.animation-play-state-running {
+-webkit-animation-play-state: running;
+-moz-animation-play-state: running;
+-ms-animation-play-state: running;
+-o-animation-play-state: running;
+animation-play-state: running;
+}
